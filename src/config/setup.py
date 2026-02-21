@@ -44,6 +44,7 @@ class Config:
         Returns:
         - dict: Loaded configuration data.
         """
+        
         try:
             with open(config_path, 'r') as file:
                 return yaml.safe_load(file)

@@ -1,4 +1,4 @@
-project_id: arun-genai-bb
+project_id: plexiform-bot-382022
 credentials_json: ./credentials/key.json
 region: us-central1
-model_name: gemini-1.5-pro-001
+model_name: gemini-2.0-flash
