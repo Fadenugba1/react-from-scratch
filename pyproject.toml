@@ -5,7 +5,7 @@ description = "Examples demonstrating the ReAct pattern in LLM prompting optimiz
 authors = ["Arun Shankar <arunpshankar@google.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "react", from = "src" }]
+packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.10"

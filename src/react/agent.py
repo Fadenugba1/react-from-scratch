@@ -21,7 +21,7 @@ import json
 Observation = Union[str, Exception]
 
 PROMPT_TEMPLATE_PATH = "./data/input/react.txt"
-OUTPUT_TRACE_PATH = "./data/output/trace.txt"
+OUTPUT_TRACE_PATH = "data/output/test.txt"
 
 class Name(Enum):
     """
@@ -103,7 +103,7 @@ class Agent:
         self.tools: Dict[Name, Tool] = {}
         self.messages: List[Message] = []
         self.query = ""
-        self.max_iterations = 5
+        self.max_iterations = 10
         self.current_iteration = 0
         self.template = self.load_template()
 
@@ -277,7 +277,8 @@ def run(query: str) -> str:
 
 
 if __name__ == "__main__":
-    query = "What is the age of the oldest tree in the country that has won the most FIFA World Cup titles?"
+    query = "Who is the oldest male tennis player to play in a professional ATP tennis match"
     final_answer = run(query)
+    print(final_answer)
     logger.info(final_answer)
-    
+   
