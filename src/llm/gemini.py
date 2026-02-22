@@ -73,3 +73,5 @@ def generate(model: GenerativeModel, contents: List[Part]) -> Optional[str]:
     except Exception as e:
         logger.error(f"Error generating response: {e}")
         return None
+    
+
